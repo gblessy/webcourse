@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<div>
+ 	<label for="firstName": >First Name</label>
+	<input id="firstName" placeholder="John" type="text" required>
+	
+	<label for="lastName": >Last Name</label>
+	<input id="lastName" placeholder="Smith" type="text" required>
+	</div>
+
+	<div><label for="male": >Male</label>
+	<input id="male" name="gender" type="radio" value="male">
+
+	<label for="female": >Female</label>
+	<input id="female" name="gender" type="radio" value="female">
+
+	<label for="other": >Other</label>
+	<input id="other" name="gender" type="radio" value="other">
+	</div>
+
+	<div>
+	<label for="email": >Email</label>
+	<input id="email" name="email" type="email" placeholder="your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+	<label for="password": >Password</label>
+	<input id="password" name="password" type="password" pattern=".{5,10}" reuqired title="5 to 10 characters" placeholder="your password"  >
+	</div>
+
+
+<div>
+<label for="birthday": >Birthday</label>
+<select id="birthday">
+	<option>Month</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+</select>
+
+<select id="birthday">
+	<option>Day</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+</select>
+<select id="birthday">
+	<option>Year</option>
+	<option>2013</option>
+	<option>2014</option>
+	<option>2015</option>
+</select>
+</div>
+
+<div>
+	<label for="agree">I agree to the terms and conditions</label>
+	<input id="agree" name="agree" type="checkbox">
+</div>
+
+<div>
+	<input type="submit" value="Submit">
+</div>
+
+
+</form>
+
+</body>
+</html>
