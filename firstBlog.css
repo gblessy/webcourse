@@ -1,7 +1,7 @@
 body {
 	border: 20px solid #bdc3c7;
 	font-family: source sans pro;
-	width: 1000px;
+	width: 800px;
 	margin: auto;
 	padding: 20px;
 	margin-top: 20px;
@@ -9,9 +9,25 @@ body {
 
 h2 {
 	text-transform: uppercase;
+	color: #3498bd;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 
-div {
+h1 + div {
+	border-left: 7px solid #bdc3c7;
+	padding-left: 5px;
+}
 
+h1 {
+	font-weight: 900;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
