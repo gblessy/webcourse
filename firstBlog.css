@@ -1,8 +1,9 @@
 body {
 	border: 20px solid #bdc3c7;
 	font-family: source sans pro;
-	width: 800px;
-	margin: auto;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
 	padding: 20px;
 	margin-top: 20px;
 }
@@ -10,19 +11,20 @@ body {
 h2 {
 	text-transform: uppercase;
 	color: #3498bd;
-	letter-spacing: 3px;
+	letter-spacing: 0.4rem;
 	font-weight: normal;
 	font-size: 14px;
 }
 
 
-h1 + div {
+.quote {
 	border-left: 7px solid #bdc3c7;
 	padding-left: 5px;
 }
 
 h1 {
-	font-weight: 900;
+	font-weight: 700;
+	color:#2c3e50;
 }
 
 hr {
@@ -30,4 +32,9 @@ hr {
 	height: 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.post {
+	margin-bottom: 20px;
 }
