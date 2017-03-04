@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.2/howler.min.js"></script>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+	
+	<script type="text/paperscript" canvas="myCanvas">
+
+	var keyData = {
+
+		a: {
+		color: "purple",
+		sound: new Howl({
+ 			 src: ['sounds/bubbles.mp3']
+			})
+		},
+
+		s: {
+		color: "green",
+		sound: new Howl({
+ 			 src: ['sounds/corona.mp3']
+				})
+		},
+
+		d: {
+		color: "grey",
+		sound: new Howl({
+ 			 src: ['sounds/clay.mp3']
+				})
+		}
+	}
+
+	var circles = [];
+
+	function onKeyDown(event) {
+	
+		var maxPoint = new Point (view.size.width, view.size.height);	
+		var randomPoint = Point.random();
+		var point = maxPoint * randomPoint;
+		var newCircle = new Path.Circle(point, 200);
+		console.log(event.key);
+		newCircle.fillColor = keyData.[event.key].color;
+		circles.push(newCircle);
+
+		// keyData.[event.key].sound.play();
+		// keyData.[event.key].color
+		//If key is "a"
+		// if(event.key === "a"){
+		// //play sound
+		// 	sound.play();
+		// 	newCircle.fillColor = "purple";
+		
+		// } 
+
+		// //If key is "s"
+		// else if(event.key === "s"){
+		// //play sound2
+		// 	sound2.play();
+		// 	newCircle.fillColor = "green";
+			
+		// }  else{
+		//  newCircle.fillColor = "orange";
+		//  }
+		 
+		 
+		}
+
+	function onFrame(event) {
+		 for(var i = 0;  i < circles.length; i++){
+			circles[i].fillColor.hue += 1;
+			circles[i].scale(.9);
+		}
+}
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

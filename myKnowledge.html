@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>My Knowledge</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>The Tressary of My Knowledge (all the needed info at hand)</h1>
+<br>
+<h3>Selectors in Vanila JS</h3>
+<ul>
+<li>document.getElementById()</li>
+<li>document.getElementsByClassName()</li>
+<li>document.getElementByTagName()</li>
+<li>document.querySelector()</li>
+<li>document.querySelectorAll()</li>
+</ul>
+<br>
+<h3>Heroku commands:</h3>
+	<ul>
+		<li>dump DB:
+			<div>heroku pg:backups capture --app z360console-staging </div>
+			<div>curl -o latest.dump `heroku pg:backups public-url --app z360console-staging`</div>
+			<div>heroku pg:backups public-url --app z360console-staging</div>
+		</li>
+		<li>
+			<div>Deamon Restart</div>
+			<div>heroku ps:restart --app z360console-staging ho_queue.1</div>
+		</li>
+		<li>
+			<div>Deamon Scale</div>
+			<div>heroku ps:scale --app z360console-staging twitter=0</div>
+		</li>
+	</ul>
+<br>
+<h3>Database Commands and basics</h3>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+
+</ul>
+
+<br>
+<h3>RESTfull routes</h3>
+<ul>
+<li>INDEX  /dogs    GET</li>
+<li>NEW  /dogs/new  GET</li>
+<li>CREATE  /dogs   POST</li>
+<li>SHOW    /dogs/:id GET</li>
+</ul>
+<h3>Nested routes</h3>
+<ul>
+<li>NEW campgrounds/:id/comments/new  GET</li>
+<li>CREATE campgrounds/:id/comments  POST</li>
+</ul>
+</body>
+</html>
